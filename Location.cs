@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Middle_Earth_Travel_Agent
 {
-    internal class Location
+    public class Location
     {
         //public int Id { get; set; }
         public string? name { get; set; }

@@ -11,12 +11,14 @@ namespace Middle_Earth_Travel_Agent
         public Form1()
         {
             InitializeComponent();
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            //this.button1.Click += new System.EventHandler(this.button1_Click);
+            //this.button2.Click += new System.EventHandler(this.button2_Click);
             this.BackColor = ColorTranslator.FromHtml("#f5eece");
         }
 
         PrivateFontCollection customFonts = new PrivateFontCollection();
-        List<Location> locations = new List<Location>();
+        List<Location> locations = new();
+        Location currentLocation = new();
 
         private void LoadCustomFont()
         {
@@ -29,6 +31,7 @@ namespace Middle_Earth_Travel_Agent
             label1.Font = customFont;
             comboBox1.Font = customFont3;
             button1.Font = customFont2;
+            button2.Font = customFont2;
 
         }
 
@@ -38,16 +41,8 @@ namespace Middle_Earth_Travel_Agent
             label1.ForeColor = ColorTranslator.FromHtml("#b87316");
             label1.BackColor = ColorTranslator.FromHtml("#f5eece");
             button1.BackColor = ColorTranslator.FromHtml("#e3b737");
-            locations =  LocationLoader.LoadLocations();
-            //Object[] locationNames = new object[locations.Count];
-            //for (int i = 0; i < locations.Count; i++)
-            //{
-            //    object? name = locations[i].name;
-            //    if(name != null)
-            //    {
-            //        locationNames[i] = name;
-            //    }
-            //}
+            button2.BackColor = ColorTranslator.FromHtml("#e3b737");
+            locations = LocationLoader.LoadLocations();
             String[] locationNames = new string[locations.Count];
             for (int i = 0; i < locations.Count; i++)
             {
@@ -56,26 +51,39 @@ namespace Middle_Earth_Travel_Agent
                 {
                     locationNames[i] = name;
                 }
-                
+
             }
             this.comboBox1.Items.AddRange(locationNames);
 
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             if (comboBox1.SelectedIndex != -1)
             {
-                String? item = (string?)comboBox1.SelectedItem;
-                MessageBox.Show(item);
+                //String? item = (string?)comboBox1.SelectedItem;
+                currentLocation = locations[comboBox1.SelectedIndex];
+                var form = new Form2(locations, currentLocation, customFonts);
+                form.Show();
+                this.Hide();
+                //MessageBox.Show(item);
             }
-            
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (comboBox1.SelectedIndex != -1)
+            {
+                //String? item = (string?)comboBox1.SelectedItem;
+                currentLocation = locations[comboBox1.SelectedIndex];
+                var form = new Form3();
+                form.Show();
+                this.Hide();
+                //MessageBox.Show(item);
+            }
+
         }
 
     }
