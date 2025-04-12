@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Rivendell",
+    "region": "Eriador",
+    "description": "A peaceful Elven refuge nestled in the hidden valleys.",
+    "activities": [ "Elven feasts", "Form fellowships", "Hiking" ],
+    "recommendedSeason": "Spring"
+  },
+  {
+    "name": "Minas Tirith",
+    "region": "Gondor",
+    "description": "The majestic capital of Gondor, with white walls and rich history.",
+    "activities": [ "Castle tours", "Horseback riding", "Archives exploration" ],
+    "recommendedSeason": "Summer"
+  },
+  {
+    "name": "The Shire",
+    "region": "Eriador",
+    "description": "Rolling green hills, charming hobbit-holes, and plenty of second breakfasts.",
+    "activities": [ "Garden strolls", "Feast festivals", "Pipeweed tasting" ],
+    "recommendedSeason": "Late Spring"
+  },
+  {
+    "name": "Lothlorien",
+    "region": "Rhovanion",
+    "description": "An enchanted forest bathed in golden light, home to the Galadhrim.",
+    "activities": [ "Tree platform tours", "Elven poetry readings", "Silvan archery classes" ],
+    "recommendedSeason": "Autumn"
+  },
+  {
+    "name": "Mount Doom",
+    "region": "Mordor",
+    "description": "A smoldering volcano where legends were forged and unmade.",
+    "activities": [ "Volcano hikes", "Dark Lord history tours", "Survival challenges" ],
+    "recommendedSeason": "Winter"
+  },
+  {
+    "name": "Fangorn Forest",
+    "region": "Rohan borderlands",
+    "description": "An ancient forest inhabited by sentient trees known as Ents.",
+    "activities": [ "Ent-guided nature walks", "Tree lore lessons", "Forest meditation" ],
+    "recommendedSeason": "Spring"
+  },
+  {
+    "name": "Helm's Deep",
+    "region": "Rohan",
+    "description": "A fortress nestled in the White Mountains, known for its legendary siege.",
+    "activities": [ "Fortress tours", "Siege reenactments", "Archery tournaments" ],
+    "recommendedSeason": "Summer"
+  },
+  {
+    "name": "Gondolin (Ruins)",
+    "region": "Beleriand",
+    "description": "Ruins of the hidden Elven city, a hauntingly beautiful historical site.",
+    "activities": [ "Archaeological expeditions", "Guided lore lectures", "Elven architecture tours" ],
+    "recommendedSeason": "Autumn"
+  },
+  {
+    "name": "Lake-town (Esgaroth)",
+    "region": "Rhovanion",
+    "description": "A lake-side town rebuilt after the dragon’s fall, rich in trade and culture.",
+    "activities": [ "Boating", "Dragon lore museums", "Market shopping" ],
+    "recommendedSeason": "Summer"
+  },
+  {
+    "name": "Barad-dur",
+    "region": "Mordor",
+    "description": "The dark tower of Sauron. Currently under new management.",
+    "activities": [ "Spooky tours", "Shadow theater", "Gothic fashion workshops" ],
+    "recommendedSeason": "Halloween Season"
+  }
+]
