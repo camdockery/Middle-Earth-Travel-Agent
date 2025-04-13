@@ -10,11 +10,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="companions.json" />
     <None Remove="locations.json" />
     <None Remove="Middleearth-ao6m.ttf" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="companions.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="locations.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

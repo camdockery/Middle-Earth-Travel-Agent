@@ -37,9 +37,10 @@
             // button1
             // 
             button1.Anchor = AnchorStyles.Top;
-            button1.Location = new Point(32, 348);
+            button1.Location = new Point(37, 464);
+            button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
-            button1.Size = new Size(316, 46);
+            button1.Size = new Size(361, 61);
             button1.TabIndex = 0;
             button1.Text = "Explore It!";
             button1.UseVisualStyleBackColor = true;
@@ -51,7 +52,7 @@
             label1.Font = new Font("Segoe UI", 20F);
             label1.Location = new Point(-1, 0);
             label1.Name = "label1";
-            label1.Size = new Size(800, 131);
+            label1.Size = new Size(914, 175);
             label1.TabIndex = 1;
             label1.Text = "Middle-earth Travel Agent";
             label1.TextAlign = ContentAlignment.MiddleCenter;
@@ -59,18 +60,20 @@
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(240, 205);
+            comboBox1.Location = new Point(245, 275);
+            comboBox1.Margin = new Padding(3, 4, 3, 4);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(316, 23);
+            comboBox1.Size = new Size(439, 28);
             comboBox1.TabIndex = 2;
             comboBox1.Text = "Where Do You Want To Explore/Book?";
             // 
             // button2
             // 
             button2.Anchor = AnchorStyles.Top;
-            button2.Location = new Point(452, 348);
+            button2.Location = new Point(517, 464);
+            button2.Margin = new Padding(3, 4, 3, 4);
             button2.Name = "button2";
-            button2.Size = new Size(316, 46);
+            button2.Size = new Size(361, 61);
             button2.TabIndex = 3;
             button2.Text = "Book It!";
             button2.UseVisualStyleBackColor = true;
@@ -78,13 +81,14 @@
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
             Controls.Add(button2);
             Controls.Add(comboBox1);
             Controls.Add(label1);
             Controls.Add(button1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             Text = "Middle Earth Travel Agent";
             Load += Form1_Load;

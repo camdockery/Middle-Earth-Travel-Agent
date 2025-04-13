@@ -30,6 +30,11 @@
         {
             label1 = new Label();
             checkedListBox1 = new CheckedListBox();
+            backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            button1 = new Button();
+            checkedListBox2 = new CheckedListBox();
+            label2 = new Label();
+            label3 = new Label();
             SuspendLayout();
             // 
             // label1
@@ -38,7 +43,7 @@
             label1.Font = new Font("Segoe UI", 20F);
             label1.Location = new Point(2, -1);
             label1.Name = "label1";
-            label1.Size = new Size(800, 131);
+            label1.Size = new Size(914, 175);
             label1.TabIndex = 2;
             label1.Text = "Booking";
             label1.TextAlign = ContentAlignment.MiddleCenter;
@@ -46,28 +51,75 @@
             // checkedListBox1
             // 
             checkedListBox1.FormattingEnabled = true;
-            checkedListBox1.Items.AddRange(new object[] { "Horse?", "Great Eagle?" });
-            checkedListBox1.Location = new Point(594, 149);
+            checkedListBox1.Location = new Point(679, 199);
+            checkedListBox1.Margin = new Padding(3, 4, 3, 4);
             checkedListBox1.Name = "checkedListBox1";
-            checkedListBox1.Size = new Size(120, 40);
+            checkedListBox1.Size = new Size(151, 70);
             checkedListBox1.TabIndex = 3;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(234, 435);
+            button1.Name = "button1";
+            button1.Size = new Size(448, 100);
+            button1.TabIndex = 4;
+            button1.Text = "Go On An Adventure!";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // checkedListBox2
+            // 
+            checkedListBox2.FormattingEnabled = true;
+            checkedListBox2.Location = new Point(459, 199);
+            checkedListBox2.Name = "checkedListBox2";
+            checkedListBox2.Size = new Size(150, 114);
+            checkedListBox2.TabIndex = 5;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(459, 164);
+            label2.Name = "label2";
+            label2.Size = new Size(50, 20);
+            label2.TabIndex = 6;
+            label2.Text = "label2";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(679, 164);
+            label3.Name = "label3";
+            label3.Size = new Size(50, 20);
+            label3.TabIndex = 7;
+            label3.Text = "label3";
             // 
             // Form3
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(checkedListBox2);
+            Controls.Add(button1);
             Controls.Add(checkedListBox1);
             Controls.Add(label1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Form3";
             Text = "Form3";
             Load += Form3_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private Label label1;
         private CheckedListBox checkedListBox1;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private Button button1;
+        private CheckedListBox checkedListBox2;
+        private Label label2;
+        private Label label3;
     }
 }
