@@ -51,10 +51,11 @@ namespace Middle_Earth_Travel_Agent
             button1.BackColor = ColorTranslator.FromHtml("#e3b737");
             companions = CompanionLoader.LoadCompanions();
             String[] mounts = {"Horse", "Great Eagle"};
-            checkedListBox1.Items.AddRange(mounts);
-            checkedListBox2.Items.AddRange(companions);
+            checkedListBox1.Items.AddRange(companions);
+            checkedListBox2.Items.AddRange(mounts);
             label2.Text = "Bring a Mount?";
             label3.Text = "Start a Fellowship?";
+            monthCalendar1.ResetText();
         }
 
         private void button1_Click(object sender, EventArgs e)

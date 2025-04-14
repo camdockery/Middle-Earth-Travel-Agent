@@ -35,6 +35,7 @@
             checkedListBox2 = new CheckedListBox();
             label2 = new Label();
             label3 = new Label();
+            monthCalendar1 = new MonthCalendar();
             SuspendLayout();
             // 
             // label1
@@ -54,7 +55,7 @@
             checkedListBox1.Location = new Point(679, 199);
             checkedListBox1.Margin = new Padding(3, 4, 3, 4);
             checkedListBox1.Name = "checkedListBox1";
-            checkedListBox1.Size = new Size(151, 70);
+            checkedListBox1.Size = new Size(151, 92);
             checkedListBox1.TabIndex = 3;
             // 
             // button1
@@ -72,7 +73,7 @@
             checkedListBox2.FormattingEnabled = true;
             checkedListBox2.Location = new Point(459, 199);
             checkedListBox2.Name = "checkedListBox2";
-            checkedListBox2.Size = new Size(150, 114);
+            checkedListBox2.Size = new Size(150, 70);
             checkedListBox2.TabIndex = 5;
             // 
             // label2
@@ -93,11 +94,18 @@
             label3.TabIndex = 7;
             label3.Text = "label3";
             // 
+            // monthCalendar1
+            // 
+            monthCalendar1.Location = new Point(104, 199);
+            monthCalendar1.Name = "monthCalendar1";
+            monthCalendar1.TabIndex = 8;
+            // 
             // Form3
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(914, 600);
+            Controls.Add(monthCalendar1);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(checkedListBox2);
@@ -121,5 +129,6 @@
         private CheckedListBox checkedListBox2;
         private Label label2;
         private Label label3;
+        private MonthCalendar monthCalendar1;
     }
 }
