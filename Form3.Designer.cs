@@ -35,7 +35,15 @@
             checkedListBox2 = new CheckedListBox();
             label2 = new Label();
             label3 = new Label();
-            monthCalendar1 = new MonthCalendar();
+            label6 = new Label();
+            comboBox1 = new ComboBox();
+            comboBox2 = new ComboBox();
+            comboBox3 = new ComboBox();
+            comboBox4 = new ComboBox();
+            comboBox5 = new ComboBox();
+            comboBox6 = new ComboBox();
+            label4 = new Label();
+            label5 = new Label();
             SuspendLayout();
             // 
             // label1
@@ -94,18 +102,94 @@
             label3.TabIndex = 7;
             label3.Text = "label3";
             // 
-            // monthCalendar1
+            // label6
             // 
-            monthCalendar1.Location = new Point(104, 199);
-            monthCalendar1.Name = "monthCalendar1";
-            monthCalendar1.TabIndex = 8;
+            label6.AutoSize = true;
+            label6.Location = new Point(432, 290);
+            label6.Name = "label6";
+            label6.Size = new Size(0, 20);
+            label6.TabIndex = 10;
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(63, 199);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(115, 28);
+            comboBox1.TabIndex = 11;
+            // 
+            // comboBox2
+            // 
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Location = new Point(184, 199);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(69, 28);
+            comboBox2.TabIndex = 12;
+            // 
+            // comboBox3
+            // 
+            comboBox3.FormattingEnabled = true;
+            comboBox3.Location = new Point(259, 199);
+            comboBox3.Name = "comboBox3";
+            comboBox3.Size = new Size(94, 28);
+            comboBox3.TabIndex = 13;
+            // 
+            // comboBox4
+            // 
+            comboBox4.FormattingEnabled = true;
+            comboBox4.Location = new Point(63, 263);
+            comboBox4.Name = "comboBox4";
+            comboBox4.Size = new Size(115, 28);
+            comboBox4.TabIndex = 14;
+            // 
+            // comboBox5
+            // 
+            comboBox5.FormattingEnabled = true;
+            comboBox5.Location = new Point(184, 263);
+            comboBox5.Name = "comboBox5";
+            comboBox5.Size = new Size(69, 28);
+            comboBox5.TabIndex = 15;
+            // 
+            // comboBox6
+            // 
+            comboBox6.FormattingEnabled = true;
+            comboBox6.Location = new Point(259, 263);
+            comboBox6.Name = "comboBox6";
+            comboBox6.Size = new Size(94, 28);
+            comboBox6.TabIndex = 16;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(63, 164);
+            label4.Name = "label4";
+            label4.Size = new Size(50, 20);
+            label4.TabIndex = 17;
+            label4.Text = "label4";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(63, 230);
+            label5.Name = "label5";
+            label5.Size = new Size(50, 20);
+            label5.TabIndex = 18;
+            label5.Text = "label5";
             // 
             // Form3
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(914, 600);
-            Controls.Add(monthCalendar1);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            Controls.Add(comboBox6);
+            Controls.Add(comboBox5);
+            Controls.Add(comboBox4);
+            Controls.Add(comboBox3);
+            Controls.Add(comboBox2);
+            Controls.Add(comboBox1);
+            Controls.Add(label6);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(checkedListBox2);
@@ -129,6 +213,14 @@
         private CheckedListBox checkedListBox2;
         private Label label2;
         private Label label3;
-        private MonthCalendar monthCalendar1;
+        private Label label6;
+        private ComboBox comboBox1;
+        private ComboBox comboBox2;
+        private ComboBox comboBox3;
+        private ComboBox comboBox4;
+        private ComboBox comboBox5;
+        private ComboBox comboBox6;
+        private Label label4;
+        private Label label5;
     }
 }

@@ -13,6 +13,13 @@
     <None Remove="companions.json" />
     <None Remove="locations.json" />
     <None Remove="Middleearth-ao6m.ttf" />
+    <None Remove="months.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="months.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
