@@ -64,7 +64,7 @@ namespace Middle_Earth_Travel_Agent
             {
                 //String? item = (string?)comboBox1.SelectedItem;
                 currentLocation = locations[comboBox1.SelectedIndex];
-                var form = new Form2(locations, currentLocation, customFonts);
+                var form = new Form2(currentLocation, customFonts);
                 form.Show();
                 this.Hide();
                 //MessageBox.Show(item);
@@ -78,7 +78,7 @@ namespace Middle_Earth_Travel_Agent
             {
                 //String? item = (string?)comboBox1.SelectedItem;
                 currentLocation = locations[comboBox1.SelectedIndex];
-                var form = new Form3();
+                var form = new Form3(currentLocation, customFonts);
                 form.Show();
                 this.Hide();
                 //MessageBox.Show(item);

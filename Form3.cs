@@ -14,20 +14,22 @@ namespace Middle_Earth_Travel_Agent
 {
     public partial class Form3 : Form
     {
-        public Form3()
+        PrivateFontCollection customFonts = new PrivateFontCollection();
+        Location currentLocation;
+        public Form3(Location currentLocation, PrivateFontCollection customFonts)
         {
             InitializeComponent();
+            this.currentLocation = currentLocation;
+            this.customFonts = customFonts;
             this.BackColor = ColorTranslator.FromHtml("#f5eece");
         }
 
-        PrivateFontCollection customFonts = new PrivateFontCollection();
+
         String[] companions;
         String[] months;
 
         private void LoadCustomFont()
         {
-            string fontPath = Path.Combine(Application.StartupPath, "Middleearth-ao6m.ttf");
-            customFonts.AddFontFile(fontPath);
 
             Font customFont = new Font(customFonts.Families[0], 25F, FontStyle.Bold);
             Font customFont2 = new Font(customFonts.Families[0], 15F, FontStyle.Regular);
@@ -38,6 +40,7 @@ namespace Middle_Earth_Travel_Agent
             label4.Font = customFont3;
             label5.Font = customFont3;
             button1.Font = customFont2;
+            button2.Font = customFont3;
             checkedListBox1.Font = customFont3;
             checkedListBox2.Font = customFont3;
             comboBox1.Font = customFont3;
@@ -60,9 +63,10 @@ namespace Middle_Earth_Travel_Agent
             label4.BackColor = ColorTranslator.FromHtml("#f5eece");
             label5.BackColor = ColorTranslator.FromHtml("#f5eece");
             button1.BackColor = ColorTranslator.FromHtml("#e3b737");
+            button2.BackColor = ColorTranslator.FromHtml("#e3b737");
             companions = CompanionLoader.LoadCompanions();
             months = MonthsLoader.LoadMonths();
-            String[] mounts = {"Horse", "Great Eagle"};
+            String[] mounts = { "Horse", "Great Eagle" };
             int totalDaysOrYears = 30;
             int currentYear = 3018;
             for (int i = 0; i <= totalDaysOrYears; i++)
@@ -86,7 +90,45 @@ namespace Middle_Earth_Travel_Agent
 
         private void button1_Click(object sender, EventArgs e)
         {
+            int selected = comboBox1.SelectedIndex;
+            int selected2 = comboBox2.SelectedIndex;
+            int selected3 = comboBox3.SelectedIndex;
+            int selected4 = comboBox4.SelectedIndex;
+            int selected5 = comboBox5.SelectedIndex;
+            int selected6 = comboBox6.SelectedIndex;
+            int year1 = -1;
+            int year2 = -1;
+            int day1 = -1;
+            int day2 = -1;
+            if (comboBox2.SelectedItem != null && comboBox3.SelectedItem != null && comboBox5.SelectedItem != null && comboBox6.SelectedItem != null)
+            {
+                year1 = (int)comboBox3.SelectedItem;
+                year2 = (int)comboBox6.SelectedItem;
+                day1 = (int)comboBox2.SelectedItem;
+                day2 = (int)comboBox5.SelectedItem;
+            }
 
+            if (selected == -1 || selected2 == -1 || selected3 == -1 || selected4 == -1 || selected5 == -1 || selected6 == -1)
+            {
+                MessageBox.Show("Finish booking information");
+            }
+            else if (year1 > year2 || (year1 == year2) && ((selected > selected4) || ((selected == selected4) && (day1 > day2))))
+            {
+                MessageBox.Show("Invalid booking date");
+            }
+            else
+            {
+                Form4 form = new Form4(currentLocation, customFonts);
+                this.Hide();
+                form.Show();
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var form = new Form1();
+            form.Show();
+            this.Hide();
         }
     }
 }

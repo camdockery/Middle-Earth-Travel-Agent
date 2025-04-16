@@ -15,13 +15,11 @@ namespace Middle_Earth_Travel_Agent
 {
     public partial class Form2 : Form
     {
-        List<Location> locations;
         Location currentLocation;
         PrivateFontCollection customFonts = new PrivateFontCollection();
-        public Form2(List<Location> locations, Location currentLocation, PrivateFontCollection customFonts)
+        public Form2(Location currentLocation, PrivateFontCollection customFonts)
         {
             InitializeComponent();
-            this.locations = locations;
             this.currentLocation = currentLocation;
             this.customFonts = customFonts;
             this.BackColor = ColorTranslator.FromHtml("#f5eece");
@@ -50,8 +48,8 @@ namespace Middle_Earth_Travel_Agent
 
         private void LoadCustomFont()
         {
-            string fontPath = Path.Combine(Application.StartupPath, "Middleearth-ao6m.ttf");
-            customFonts.AddFontFile(fontPath);
+            //string fontPath = Path.Combine(Application.StartupPath, "Middleearth-ao6m.ttf");
+            //customFonts.AddFontFile(fontPath);
 
             Font customFont = new Font(customFonts.Families[0], 25F, FontStyle.Bold);
             //Font customFont2 = new Font(customFonts.Families[0], 15F, FontStyle.Regular);
