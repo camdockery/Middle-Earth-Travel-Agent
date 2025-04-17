@@ -17,11 +17,13 @@ namespace Middle_Earth_Travel_Agent
     {
         Location currentLocation;
         PrivateFontCollection customFonts = new PrivateFontCollection();
-        public Form4(Location currentLocation, PrivateFontCollection customFonts)
+        String[] companionsChecked;
+        public Form4(Location currentLocation, PrivateFontCollection customFonts, String[] companionsChecked)
         {
             InitializeComponent();
             this.currentLocation = currentLocation;
             this.customFonts = customFonts;
+            this.companionsChecked = companionsChecked;
             this.BackColor = ColorTranslator.FromHtml("#f5eece");
         }
 

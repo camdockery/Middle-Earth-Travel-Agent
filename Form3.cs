@@ -69,7 +69,7 @@ namespace Middle_Earth_Travel_Agent
             String[] mounts = { "Horse", "Great Eagle" };
             int totalDaysOrYears = 30;
             int currentYear = 3018;
-            for (int i = 0; i <= totalDaysOrYears; i++)
+            for (int i = 1; i <= totalDaysOrYears; i++)
             {
                 comboBox2.Items.Add(i);
                 comboBox3.Items.Add(currentYear);
@@ -118,7 +118,23 @@ namespace Middle_Earth_Travel_Agent
             }
             else
             {
-                Form4 form = new Form4(currentLocation, customFonts);
+
+                String month1 = "empty";
+                String month2 = "empty";
+                if (comboBox1.SelectedItem != null && comboBox4.SelectedItem != null)
+                {
+                    month1 = (String)comboBox1.SelectedItem;
+                    month2 = (String)comboBox4.SelectedItem;
+                }
+                String[] companionsChecked = new String[checkedListBox1.CheckedItems.Count];
+                for(int i = 0; i <  checkedListBox1.CheckedItems.Count; i++)
+                {
+                    if(checkedListBox1.CheckedItems[i] != null)
+                    {
+                        companionsChecked[i] = checkedListBox1.CheckedItems[i].ToString();
+                    }                  
+                }
+                Form4 form = new Form4(currentLocation, customFonts, companionsChecked);
                 this.Hide();
                 form.Show();
             }
