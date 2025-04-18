@@ -18,13 +18,19 @@ namespace Middle_Earth_Travel_Agent
         Location currentLocation;
         PrivateFontCollection customFonts = new PrivateFontCollection();
         String[] companionsChecked;
-        public Form4(Location currentLocation, PrivateFontCollection customFonts, String[] companionsChecked)
+        String[] mountsChecked;
+        Date journeyStart;
+        Date journeyEnd;
+        public Form4(Location currentLocation, PrivateFontCollection customFonts, String[] companionsChecked, String[] mountsChecked, Date journeyStart, Date journeyEnd)
         {
             InitializeComponent();
             this.currentLocation = currentLocation;
             this.customFonts = customFonts;
             this.companionsChecked = companionsChecked;
+            this.mountsChecked = mountsChecked;
             this.BackColor = ColorTranslator.FromHtml("#f5eece");
+            this.journeyStart = journeyStart;
+            this.journeyEnd = journeyEnd;  
         }
 
         private void LoadCustomFont()
@@ -41,6 +47,7 @@ namespace Middle_Earth_Travel_Agent
         {
             LoadCustomFont();
             label1.ForeColor = ColorTranslator.FromHtml("#b87316");
+            MessageBox.Show(currentLocation.name + "\n" + companionsChecked[0] + "\n" + mountsChecked[0] + "\n" + journeyStart.month + "\n" + journeyEnd.month);
         }
     }
 }

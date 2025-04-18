@@ -134,7 +134,23 @@ namespace Middle_Earth_Travel_Agent
                         companionsChecked[i] = checkedListBox1.CheckedItems[i].ToString();
                     }                  
                 }
-                Form4 form = new Form4(currentLocation, customFonts, companionsChecked);
+                String[] mountsChecked = new String[checkedListBox2.CheckedItems.Count];
+                for (int i = 0; i < checkedListBox2.CheckedItems.Count; i++)
+                {
+                    if (checkedListBox2.CheckedItems[i] != null)
+                    {
+                        mountsChecked[i] = checkedListBox2.CheckedItems[i].ToString();
+                    }
+                }
+                Date journeyStart = new Date();
+                Date journeyEnd = new Date();
+                journeyStart.month = month1;
+                journeyStart.day = day1;
+                journeyStart.year = year1;
+                journeyEnd.month = month2;
+                journeyEnd.day = day2;
+                journeyEnd.year = year2;
+                Form4 form = new Form4(currentLocation, customFonts, companionsChecked, mountsChecked, journeyStart, journeyEnd);
                 this.Hide();
                 form.Show();
             }

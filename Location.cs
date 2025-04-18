@@ -9,7 +9,6 @@ namespace Middle_Earth_Travel_Agent
 {
     public class Location
     {
-        //public int Id { get; set; }
         public string? name { get; set; }
         public string? region { get; set; }
         public string? description { get; set; }
