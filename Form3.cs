@@ -90,7 +90,6 @@ namespace Middle_Earth_Travel_Agent
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(comboBox2.SelectedIndex.ToString());
             int selected = comboBox1.SelectedIndex;
             int selected2 = comboBox2.SelectedIndex;
             int selected3 = comboBox3.SelectedIndex;

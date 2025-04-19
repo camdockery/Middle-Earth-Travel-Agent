@@ -53,7 +53,7 @@
             label1.Font = new Font("Segoe UI", 20F);
             label1.Location = new Point(2, -1);
             label1.Name = "label1";
-            label1.Size = new Size(800, 131);
+            label1.Size = new Size(914, 175);
             label1.TabIndex = 2;
             label1.Text = "Booking";
             label1.TextAlign = ContentAlignment.MiddleCenter;
@@ -61,17 +61,17 @@
             // checkedListBox1
             // 
             checkedListBox1.FormattingEnabled = true;
-            checkedListBox1.Location = new Point(594, 149);
+            checkedListBox1.Location = new Point(679, 199);
+            checkedListBox1.Margin = new Padding(3, 4, 3, 4);
             checkedListBox1.Name = "checkedListBox1";
-            checkedListBox1.Size = new Size(133, 166);
+            checkedListBox1.Size = new Size(151, 202);
             checkedListBox1.TabIndex = 3;
             // 
             // button1
             // 
-            button1.Location = new Point(205, 326);
-            button1.Margin = new Padding(3, 2, 3, 2);
+            button1.Location = new Point(234, 435);
             button1.Name = "button1";
-            button1.Size = new Size(392, 75);
+            button1.Size = new Size(448, 100);
             button1.TabIndex = 4;
             button1.Text = "Go On An Adventure!";
             button1.UseVisualStyleBackColor = true;
@@ -80,115 +80,115 @@
             // checkedListBox2
             // 
             checkedListBox2.FormattingEnabled = true;
-            checkedListBox2.Location = new Point(402, 149);
-            checkedListBox2.Margin = new Padding(3, 2, 3, 2);
+            checkedListBox2.Location = new Point(459, 199);
             checkedListBox2.Name = "checkedListBox2";
-            checkedListBox2.Size = new Size(132, 58);
+            checkedListBox2.Size = new Size(150, 70);
             checkedListBox2.TabIndex = 5;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(402, 123);
+            label2.Location = new Point(459, 164);
             label2.Name = "label2";
-            label2.Size = new Size(38, 15);
+            label2.Size = new Size(50, 20);
             label2.TabIndex = 6;
             label2.Text = "label2";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(594, 123);
+            label3.Location = new Point(679, 164);
             label3.Name = "label3";
-            label3.Size = new Size(38, 15);
+            label3.Size = new Size(50, 20);
             label3.TabIndex = 7;
             label3.Text = "label3";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(378, 218);
+            label6.Location = new Point(432, 291);
             label6.Name = "label6";
-            label6.Size = new Size(0, 15);
+            label6.Size = new Size(0, 20);
             label6.TabIndex = 10;
             // 
             // comboBox1
             // 
+            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(55, 149);
-            comboBox1.Margin = new Padding(3, 2, 3, 2);
+            comboBox1.Location = new Point(63, 199);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(101, 23);
+            comboBox1.Size = new Size(115, 28);
             comboBox1.TabIndex = 11;
             // 
             // comboBox2
             // 
+            comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(161, 149);
-            comboBox2.Margin = new Padding(3, 2, 3, 2);
+            comboBox2.Location = new Point(184, 199);
             comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(61, 23);
+            comboBox2.Size = new Size(69, 28);
             comboBox2.TabIndex = 12;
             // 
             // comboBox3
             // 
+            comboBox3.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox3.FormattingEnabled = true;
-            comboBox3.Location = new Point(227, 149);
-            comboBox3.Margin = new Padding(3, 2, 3, 2);
+            comboBox3.Location = new Point(259, 199);
             comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(83, 23);
+            comboBox3.Size = new Size(94, 28);
             comboBox3.TabIndex = 13;
             // 
             // comboBox4
             // 
+            comboBox4.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox4.FormattingEnabled = true;
-            comboBox4.Location = new Point(55, 197);
-            comboBox4.Margin = new Padding(3, 2, 3, 2);
+            comboBox4.Location = new Point(63, 263);
             comboBox4.Name = "comboBox4";
-            comboBox4.Size = new Size(101, 23);
+            comboBox4.Size = new Size(115, 28);
             comboBox4.TabIndex = 14;
             // 
             // comboBox5
             // 
+            comboBox5.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox5.FormattingEnabled = true;
-            comboBox5.Location = new Point(161, 197);
-            comboBox5.Margin = new Padding(3, 2, 3, 2);
+            comboBox5.Location = new Point(184, 263);
             comboBox5.Name = "comboBox5";
-            comboBox5.Size = new Size(61, 23);
+            comboBox5.Size = new Size(69, 28);
             comboBox5.TabIndex = 15;
             // 
             // comboBox6
             // 
+            comboBox6.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox6.FormattingEnabled = true;
-            comboBox6.Location = new Point(227, 197);
-            comboBox6.Margin = new Padding(3, 2, 3, 2);
+            comboBox6.Location = new Point(259, 263);
             comboBox6.Name = "comboBox6";
-            comboBox6.Size = new Size(83, 23);
+            comboBox6.Size = new Size(94, 28);
             comboBox6.TabIndex = 16;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(55, 123);
+            label4.Location = new Point(63, 164);
             label4.Name = "label4";
-            label4.Size = new Size(38, 15);
+            label4.Size = new Size(50, 20);
             label4.TabIndex = 17;
             label4.Text = "label4";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(55, 174);
+            label5.Location = new Point(63, 232);
             label5.Name = "label5";
-            label5.Size = new Size(38, 15);
+            label5.Size = new Size(50, 20);
             label5.TabIndex = 18;
             label5.Text = "label5";
             // 
             // button2
             // 
-            button2.Location = new Point(713, 415);
+            button2.Location = new Point(815, 553);
+            button2.Margin = new Padding(3, 4, 3, 4);
             button2.Name = "button2";
-            button2.Size = new Size(75, 23);
+            button2.Size = new Size(86, 31);
             button2.TabIndex = 19;
             button2.Text = "Go Back";
             button2.UseVisualStyleBackColor = true;
@@ -196,9 +196,9 @@
             // 
             // Form3
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
             Controls.Add(button2);
             Controls.Add(label5);
             Controls.Add(label4);
@@ -215,6 +215,7 @@
             Controls.Add(button1);
             Controls.Add(checkedListBox1);
             Controls.Add(label1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Form3";
             Text = "Form3";
             Load += Form3_Load;

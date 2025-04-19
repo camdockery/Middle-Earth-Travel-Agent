@@ -48,6 +48,8 @@ namespace Middle_Earth_Travel_Agent
             label7.Font = customFont3;
             label8.Font = customFont2;
             label9.Font = customFont3;
+            label10.Font = customFont2;
+            label11.Font = customFont3;
         }
 
         private void Form4_Load(object sender, EventArgs e)
@@ -90,7 +92,19 @@ namespace Middle_Earth_Travel_Agent
                     companionCounter = 0;
                 }         
             }
+            label10.ForeColor = ColorTranslator.FromHtml("#b87316");
+            label10.Text = "Mounts:";
+            label11.BackColor = ColorTranslator.FromHtml("#f5eece");
+            label11.Text = "";
+            foreach(string mount in mountsChecked)
+            {
+                label11.Text += mount.PadRight(20);
+            }
+            if(label11.Text == "")
+            {
+                label11.Text = "None";
 
+            }
         }
     }
 }
