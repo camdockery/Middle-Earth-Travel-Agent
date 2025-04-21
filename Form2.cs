@@ -13,6 +13,9 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar;
 
 namespace Middle_Earth_Travel_Agent
 {
+    /*
+     * The explore location page
+     */
     public partial class Form2 : Form
     {
         Location currentLocation;
@@ -25,6 +28,9 @@ namespace Middle_Earth_Travel_Agent
             this.BackColor = ColorTranslator.FromHtml("#f5eece");
         }
 
+        /*
+        * The different text and actions formed when the form loads in 
+        */
         private void Form2_Load(object sender, EventArgs e)
         {
             LoadCustomFont();
@@ -36,8 +42,6 @@ namespace Middle_Earth_Travel_Agent
             label4.Text = "Region: ";
             label5.Text = currentLocation.region;
             label6.Text = "Activities: ";
-            //String? activities = "";
-            //activities.Join(activities, currentLocation.activities);
             if (currentLocation.activities != null)
             {
                 label7.Text = String.Join(", ", currentLocation.activities);
@@ -46,13 +50,12 @@ namespace Middle_Earth_Travel_Agent
             label9.Text = currentLocation.recommendedSeason;
         }
 
+        /*
+         * Loads the custom Middle Earth style font on all the text
+         */
         private void LoadCustomFont()
         {
-            //string fontPath = Path.Combine(Application.StartupPath, "Middleearth-ao6m.ttf");
-            //customFonts.AddFontFile(fontPath);
-
             Font customFont = new Font(customFonts.Families[0], 25F, FontStyle.Bold);
-            //Font customFont2 = new Font(customFonts.Families[0], 15F, FontStyle.Regular);
             Font customFont2 = new Font(customFonts.Families[0], 10F, FontStyle.Regular);
             Font customFont3 = new Font(customFonts.Families[0], 8F, FontStyle.Regular);
             label1.Font = customFont;
@@ -76,10 +79,6 @@ namespace Middle_Earth_Travel_Agent
             button1.BackColor = ColorTranslator.FromHtml("#e3b737");
         }
 
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
